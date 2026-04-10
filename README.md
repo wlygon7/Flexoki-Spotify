@@ -17,13 +17,5 @@ An inky, warm Spotify theme based on [Steph Ango's Flexoki](https://stephango.co
 3. Search **Flexoki**
 4. Click **Install**
 
-## Manual Installation
-```bash
-cd "$(spicetify -c | xargs dirname)/Themes"
-git clone https://github.com/wlygon7/spicetify-flexoki Flexoki
-spicetify config current_theme Flexoki color_scheme Dark
-spicetify apply
-```
-
 ## Attribution
 Flexoki palette by [Steph Ango](https://stephango.com/flexoki) — MIT License
