@@ -1,8 +1,8 @@
 /* === FLEXOKI SPICETIFY THEME === */
 
 :root {
-    --spice-button: #D14D41;
-    --spice-button-active: #D14D41;
+    --spice-button: #D14D41 !important;
+    --spice-button-active: #D14D41 !important;
     --spice-sidebar: #1C1B1A;
 }
 
@@ -11,7 +11,7 @@
 .encore-dark-theme .encore-base-set {
     --background-press: unset;
     --background-base: #100F0F;
-    --background-highlight: #D14D41;
+    --background-highlight: #D14D41 !important; 
 }
 
 /* Kill the green accent set */
@@ -59,4 +59,23 @@
 
 .main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
     color: rgba(253, 253, 253, 0.4);
+}
+
+/* Play button on cards (hover) */
+.main-playButton-PlayButton svg,
+.main-playButton-PlayButton button svg,
+
+/* Now playing bar — big play/pause circle */
+.ButtonInner-large-iconOnly svg,
+
+/* Track list playing indicator (animated bars) */
+.main-trackList-playingIcon svg,
+
+/* Playback controls */
+[data-testid="control-button-playpause"] svg,
+
+/* Card play buttons */
+[data-testid="play-button"] svg,
+.main-card-PlayButtonContainer svg {
+    filter: invert(41%) sepia(53%) saturate(1081%) hue-rotate(323deg) brightness(85%) contrast(91%) !important;
 }
