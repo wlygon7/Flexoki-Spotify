@@ -1,9 +1,13 @@
 /* === FLEXOKI SPICETIFY THEME === */
 
 /* Force variables AFTER Spotify's own :root block */
-html body {
-    --spice-button: #D14D41 !important;
-    --spice-button-active: #D14D41 !important;
+html, html body, html body .Root {
+    --spice-button: #D14D41;
+    --spice-button-active: #D14D41;
+    --essential-positive: #D14D41;
+    --text-positive: #D14D41;
+    --essential-bright-accent: #D14D41;
+    --text-bright-accent: #D14D41;
 }
 
 .encore-dark-theme,
