@@ -20,7 +20,7 @@ An inky, warm Spotify theme based on [Steph Ango's Flexoki](https://stephango.co
 ## Manual Installation
 ```bash
 cd "$(spicetify -c | xargs dirname)/Themes"
-git clone https://github.com/wlygon7/spicetify-flexoki Flexoki
+git clone https://github.com/wlygon7/Flexoki-Spotify Flexoki
 spicetify config current_theme Flexoki color_scheme Dark
 spicetify apply
 ```
