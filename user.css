@@ -1,9 +1,19 @@
 /* === FLEXOKI SPICETIFY THEME === */
 
-:root {
+/* Force variables AFTER Spotify's own :root block */
+html body {
     --spice-button: #D14D41 !important;
     --spice-button-active: #D14D41 !important;
-    --spice-sidebar: #1C1B1A;
+}
+
+.encore-dark-theme,
+.encore-dark-theme .encore-base-set {
+    --background-press: #1C1B1A !important;
+    --background-highlight: #D14D41 !important;
+    --text-positive: #D14D41 !important;
+    --essential-positive: #D14D41 !important;
+    --essential-bright-accent: #D14D41 !important;
+    --text-bright-accent: #D14D41 !important;
 }
 
 /* Nuclear green kill — I'm so done with this crap */
@@ -17,15 +27,6 @@ svg[style*="fill: #1ed760"],
     filter: invert(41%) sepia(53%) saturate(1081%) hue-rotate(323deg) brightness(85%) contrast(91%) !important;
     color: #D14D41 !important;
     fill: #D14D41 !important;
-}
-
-
-/* To kill a Hover/press color */
-.encore-dark-theme,
-.encore-dark-theme .encore-base-set {
-    --background-press: unset;
-    --background-base: #100F0F;
-    --background-highlight: #D14D41 !important; 
 }
 
 /* Kill the green accent set */
