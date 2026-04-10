@@ -1,0 +1,65 @@
+/* === FLEXOKI SPICETIFY THEME === */
+/* by wlygon | github.com/wlygon7 */
+
+:root {
+  --border-radius: 8px;
+}
+
+/* Rounded cards */
+.main-card-card,
+.x-entityCard-cardWrapper {
+  border-radius: var(--border-radius) !important;
+}
+
+/* Sidebar nav items */
+.nav-item:hover,
+.nav-item--active {
+  border-radius: 6px;
+}
+
+/* Progress bar */
+.playback-bar .progress-bar__bg {
+  border-radius: 2px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--spice-misc);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--spice-subtext);
+}
+
+/* Remove Spotify's harsh outlines on focus */
+*:focus-visible {
+  outline: 2px solid var(--spice-button) !important;
+  outline-offset: 2px;
+}
+
+/* Artist/album page header */
+.x-entityHeader-background {
+  opacity: 0.85 !important;
+}
+
+/* Now playing bar border top */
+.Root__now-playing-bar {
+  border-top: 1px solid var(--spice-misc);
+}
+
+/* Sidebar border */
+.Root__nav-bar {
+  border-right: 1px solid var(--spice-misc);
+}
+
+/* Card hover */
+.main-card-card:hover {
+  background-color: var(--spice-card) !important;
+  transition: background 0.15s ease;
+}

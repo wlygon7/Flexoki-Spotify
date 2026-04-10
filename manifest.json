@@ -1,0 +1,15 @@
+{
+  "name": "Flexoki",
+  "description": "An inky, warm, minimal theme for Spotify based on Steph Ango's Flexoki color palette.",
+  "preview": "preview.png",
+  "readme": "README.md",
+  "usercss": "user.css",
+  "schemes": "color.ini",
+  "authors": [
+    {
+      "name": "wlygon7",
+      "url": "https://github.com/wlygon7"
+    }
+  ],
+  "tags": ["dark", "light", "minimal", "warm", "flexoki"]
+}
