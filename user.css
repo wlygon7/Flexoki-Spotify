@@ -1,36 +1,62 @@
 /* === FLEXOKI SPICETIFY THEME === */
 
 :root {
-  --border-radius: 8px;
+    --spice-button: #D14D41;
+    --spice-button-active: #D14D41;
+    --spice-sidebar: #1C1B1A;
 }
 
-/* Album art fix */
-.main-card-card,
-.x-entityCard-cardWrapper {
-  border-radius: var(--border-radius) !important;
-  overflow: hidden !important;
+/* To kill a Hover/press color */
+.encore-dark-theme,
+.encore-dark-theme .encore-base-set {
+    --background-press: unset;
+    --background-base: #100F0F;
+    --background-highlight: #D14D41;
 }
 
-.main-cardImage-image {
-  object-fit: cover !important;
-  border-radius: var(--border-radius) !important;
+/* Kill the green accent set */
+.encore-dark-theme .encore-bright-accent-set {
+    --background-highlight: #D14D41;
+    --background-press: #C44336;
 }
 
-/* Scrollbar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb {
-  background: var(--spice-misc);
-  border-radius: 3px;
+/* Selected/playing row */
+.main-trackList-trackListRow.MxoETbR0GSKhCd1hp6Np,
+.main-trackList-trackListRow.MxoETbR0GSKhCd1hp6Np:hover {
+    background-color: #C44336;
 }
-::-webkit-scrollbar-thumb:hover { background: var(--spice-subtext); }
 
-/* Borders */
-.Root__now-playing-bar { border-top: 1px solid var(--spice-misc); }
-.Root__nav-bar { border-right: 1px solid var(--spice-misc); }
+/* Active/selected state color for text */
+.encore-dark-theme {
+    --text-bright-accent: #D14D41;
+}
 
-/* Focus ring */
-*:focus-visible {
-  outline: 2px solid var(--spice-button) !important;
-  outline-offset: 2px;
+/* Primary action buttons (the big play button circle thingy :p) */
+.ButtonInner-large-iconOnly {
+    background-color: #D14D41;
+    color: white;
+}
+
+.ButtonInner-medium-iconOnly {
+    background-color: #D14D41;
+}
+
+/* e-9890 button system (newer Spotify UI?) */
+.e-9890-button-primary__inner,
+.e-91000-button-primary__inner {
+    background-color: #D14D41;
+}
+
+/* Playing icon — force to Flexoki warm white, not green :) */
+.main-trackList-playingIcon {
+    filter: grayscale(100%) brightness(200%);
+}
+
+/* Tracklist active text stays white (hopefully) */
+.main-trackList-trackListRow.main-trackList-active .main-trackList-rowTitle {
+    color: white;
+}
+
+.main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
+    color: rgba(253, 253, 253, 0.4);
 }
