@@ -4,9 +4,6 @@ An inky, warm Spotify theme based on [Steph Ango's Flexoki](https://stephango.co
 
 > "Like ink on paper." — Flexoki is designed for legibility and perceptual balance.
 
-## Preview
-![Flexoki Dark Preview](preview.png)
-
 ## Schemes
 - **Dark** — warm dark backgrounds, muted tones, red/orange accents
 - **Light** — paper whites, ink blacks, earthy accent colors
