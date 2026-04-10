@@ -5,24 +5,74 @@
   --border-radius: 8px;
 }
 
-/* Rounded cards */
 .main-card-card,
 .x-entityCard-cardWrapper {
   border-radius: var(--border-radius) !important;
+  overflow: hidden !important;
 }
 
-/* Sidebar nav items */
-.nav-item:hover,
-.nav-item--active {
-  border-radius: 6px;
+/* Prevent image inside card from stretching/clipping */
+.main-card-card img,
+.x-entityCard-cardWrapper img,
+.main-cardImage-image {
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: var(--border-radius) !important;
 }
 
-/* Progress bar */
-.playback-bar .progress-bar__bg {
-  border-radius: 2px;
+/* Override the green CSS variables at root level */
+:root {
+  --spice-button: #D14D41 !important;
+  --spice-button-active: #C44336 !important;
+  --spice-equalizer: #D14D41 !important;
 }
 
-/* Scrollbar styling */
+/* Play button circle (the big pause/play on hover over card) */
+.main-playButton-PlayButton,
+.main-playButton-PlayButton:hover,
+button[data-testid="play-button"],
+button[data-testid="play-button"]:hover {
+  background-color: var(--spice-button) !important;
+  color: var(--spice-main) !important;
+}
+
+/* Now playing bar buttons hover */
+.player-controls button:hover,
+.main-playPauseButton-button:hover,
+.main-shuffleButton-button:hover,
+.main-repeatButton-button:hover,
+.main-skipForwardButton-button:hover,
+.main-skipBackButton-button:hover {
+  color: var(--spice-text) !important;
+}
+
+/* Green dot / active indicator on currently playing track */
+.main-trackList-playingIcon,
+.main-trackList-playingIcon svg {
+  color: var(--spice-button) !important;
+  fill: var(--spice-button) !important;
+}
+
+/* Liked/heart button active state */
+.main-addButton-button[aria-checked="true"],
+.main-addButton-button.main-addButton-active {
+  color: var(--spice-button) !important;
+}
+
+/* Volume/progress bar fill color */
+.progress-bar__fg,
+.main-playbackBarRemainingTime-container .progress-bar__fg {
+  background-color: var(--spice-button) !important;
+}
+
+/* Generic green overrides for any stragglers */
+[style*="color: var(--positive)"],
+[style*="background-color: var(--positive)"] {
+  color: var(--spice-button) !important;
+  background-color: var(--spice-button) !important;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -37,29 +87,15 @@
   background: var(--spice-subtext);
 }
 
-/* Remove Spotify's harsh outlines on focus */
 *:focus-visible {
   outline: 2px solid var(--spice-button) !important;
   outline-offset: 2px;
 }
 
-/* Artist/album page header */
-.x-entityHeader-background {
-  opacity: 0.85 !important;
-}
-
-/* Now playing bar border top */
 .Root__now-playing-bar {
   border-top: 1px solid var(--spice-misc);
 }
 
-/* Sidebar border */
 .Root__nav-bar {
   border-right: 1px solid var(--spice-misc);
-}
-
-/* Card hover */
-.main-card-card:hover {
-  background-color: var(--spice-card) !important;
-  transition: background 0.15s ease;
 }
