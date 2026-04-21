@@ -85,7 +85,14 @@ svg[style*="fill: #1ed760"],
 .main-playButton-PlayButton button svg,
 
 /* Now playing bar — big play/pause circle */
-.ButtonInner-large-iconOnly svg,
+/* .ButtonInner-large-iconOnly svg, */
+
+/* Force play/pause icon to white inside the big red circle */
+.ButtonInner-large-iconOnly svg {
+    filter: brightness(0) invert(1) !important;
+    color: white !important;
+    fill: white !important;
+}
 
 /* Track list playing indicator (animated bars) */
 .main-trackList-playingIcon svg,
